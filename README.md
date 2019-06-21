@@ -3,9 +3,9 @@
 
 Various resources for building PCBs with SAO and LSAO ports for building badges or badge addons.
 
-The SAO connector is the original standardised connector, exposing power and I2C from the host badge to an addon.
-The LSAO connector is an iteration on the DEFCON SAO port which adds UART (or 2x GPIO), SPI, and the RST signal if implemented, to help with badge programming.
-The SAO v1.69bis connector is an iteration of the DEFCON SAO port with adds 2x GPIO (or UART) to the original SAO 
+ - The SAO connector is the original standardised connector, exposing power and I2C from the host badge to an addon.
+ - The LSAO connector is an iteration on the DEFCON SAO port which adds UART (or 2x GPIO), SPI, and the RST signal if implemented, to help with badge programming.
+ - The SAO v1.69bis connector is an iteration of the DEFCON SAO port with adds 2x GPIO (or UART) to the original SAO 
 
 Typically voltage is 3.3v on the badge VCC connector on all these ports.
 
@@ -17,21 +17,23 @@ Examples
 
 *SAO*
 
-<insert exceptionally long list of badges and addons here>
+ - [AND!XOR's reference designs](https://github.com/ANDnXOR/sao-reference-designs)
+ - _insert exceptionally long list of badges and addons here_
 
 *LSAO*
 
-The original reference badge for LSAO is devec0's [BSidesCBR/Cybernats 2019 "Nopia 1337" badge.](https://github.com/BSidesCbr/2019badge)
-The best reference badge is filsy's [OzSec 2019 badge](https://github.com/ozseccon/ozseccon2019_badge)
+ - The original reference badge for LSAO is devec0's [BSidesCBR/Cybernats 2019 "Nopia 1337" badge.](https://github.com/BSidesCbr/2019badge)
+ - The best reference badge is filsy's [OzSec 2019 badge](https://github.com/ozseccon/ozseccon2019_badge)
 
 *SAO v1.69bis*
 
-<insert growing list of SAO v1.69bis addons and badges here>
+ - _insert growing list of SAO v1.69bis addons and badges here_
 
 Current Resources
 -----------------
 
-`LSAO.lib` - KiCad schematic footprint for LSAO. Includes SAO.
+- `LSAO.lib` - KiCad schematic footprint for LSAO. Includes SAO.
+- `badgelife_sao_v169bis.*` - KiCad schematic footprints and library files for SAO v1.69bis, by 
 
 Use either the "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" (for addons) or "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" (for badges) PCB footprint.
 
